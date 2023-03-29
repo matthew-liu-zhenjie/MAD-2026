@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.2 (lin64) Build 2258646 Thu Jun 14 20:02:38 MDT 2018
-| Date         : Sat Mar 25 11:38:50 2023
+| Date         : Wed Mar 29 14:29:03 2023
 | Host         : mattliu-ZenBook-UX435EGL-UX435EGL running 64-bit Ubuntu 22.04.2 LTS
 | Command      : report_utilization -file Top_Student_utilization_synth.rpt -pb Top_Student_utilization_synth.pb
 | Design       : Top_Student

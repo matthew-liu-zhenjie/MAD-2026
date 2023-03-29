@@ -14,9 +14,9 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 511822 
+INFO: Helper process launched with PID 26178 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 1231.270 ; gain = 78.023 ; free physical = 1688 ; free virtual = 9619
+Starting RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 1231.273 ; gain = 78.023 ; free physical = 6380 ; free virtual = 13527
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'Top_Student' [/home/mattliu/Desktop/MAD-2026/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:15]
 INFO: [Synth 8-6157] synthesizing module 'AudioOutModule' [/home/mattliu/Desktop/MAD-2026/MouseAudioDisplay.srcs/sources_1/new/AudioOutModule.v:23]
@@ -150,7 +150,7 @@ WARNING: [Synth 8-3331] design oled_digit_5 has unconnected port CLOCK
 WARNING: [Synth 8-3331] design oled_digit_4 has unconnected port CLOCK
 WARNING: [Synth 8-3331] design oled_digit_0 has unconnected port CLOCK
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1282.895 ; gain = 129.648 ; free physical = 1691 ; free virtual = 9626
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1282.898 ; gain = 129.648 ; free physical = 6372 ; free virtual = 13520
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -181,10 +181,10 @@ WARNING: [Synth 8-3295] tying undriven pin OLED:reset to constant 0 [/home/mattl
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1282.895 ; gain = 129.648 ; free physical = 1696 ; free virtual = 9630
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1282.898 ; gain = 129.648 ; free physical = 6373 ; free virtual = 13522
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1282.895 ; gain = 129.648 ; free physical = 1696 ; free virtual = 9630
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1282.898 ; gain = 129.648 ; free physical = 6373 ; free virtual = 13522
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7a35tcpg236-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -204,22 +204,22 @@ Completed Processing XDC Constraints
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1649.246 ; gain = 0.000 ; free physical = 1300 ; free virtual = 9324
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1649.250 ; gain = 0.000 ; free physical = 6161 ; free virtual = 13280
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:08 ; elapsed = 00:00:13 . Memory (MB): peak = 1649.246 ; gain = 496.000 ; free physical = 1413 ; free virtual = 9404
+Finished Constraint Validation : Time (s): cpu = 00:00:07 ; elapsed = 00:00:13 . Memory (MB): peak = 1649.250 ; gain = 496.000 ; free physical = 6242 ; free virtual = 13360
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a35tcpg236-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:08 ; elapsed = 00:00:13 . Memory (MB): peak = 1649.246 ; gain = 496.000 ; free physical = 1413 ; free virtual = 9404
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:07 ; elapsed = 00:00:13 . Memory (MB): peak = 1649.250 ; gain = 496.000 ; free physical = 6242 ; free virtual = 13360
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:08 ; elapsed = 00:00:13 . Memory (MB): peak = 1649.246 ; gain = 496.000 ; free physical = 1408 ; free virtual = 9404
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:07 ; elapsed = 00:00:13 . Memory (MB): peak = 1649.250 ; gain = 496.000 ; free physical = 6242 ; free virtual = 13360
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5545] ROM "C00" won't be mapped to RAM because address size (27) is larger than maximum supported(25)
 INFO: [Synth 8-5545] ROM "C00" won't be mapped to RAM because address size (27) is larger than maximum supported(25)
@@ -409,7 +409,7 @@ reset_enable_reporting_wait_ack | 0000000010000000000000000000000000000 |       
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'MouseCtl'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:15 . Memory (MB): peak = 1649.246 ; gain = 496.000 ; free physical = 1405 ; free virtual = 9395
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:14 . Memory (MB): peak = 1649.250 ; gain = 496.000 ; free physical = 6227 ; free virtual = 13346
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -738,7 +738,7 @@ WARNING: [Synth 8-3332] Sequential element (Mouse/new_event_reg) is unused and w
 WARNING: [Synth 8-3332] Sequential element (Mouse/xpos_reg[0]) is unused and will be removed from module mouse_disp_indv.
 WARNING: [Synth 8-3332] Sequential element (Mouse/ypos_reg[0]) is unused and will be removed from module mouse_disp_indv.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:21 . Memory (MB): peak = 1649.246 ; gain = 496.000 ; free physical = 1318 ; free virtual = 9301
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:20 . Memory (MB): peak = 1649.250 ; gain = 496.000 ; free physical = 6181 ; free virtual = 13324
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -750,13 +750,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:26 . Memory (MB): peak = 1649.246 ; gain = 496.000 ; free physical = 1169 ; free virtual = 9171
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:24 . Memory (MB): peak = 1649.250 ; gain = 496.000 ; free physical = 6091 ; free virtual = 13215
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:26 . Memory (MB): peak = 1649.246 ; gain = 496.000 ; free physical = 1158 ; free virtual = 9161
+Finished Timing Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:25 . Memory (MB): peak = 1649.250 ; gain = 496.000 ; free physical = 6089 ; free virtual = 13212
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -792,7 +792,7 @@ WARNING: [Synth 8-3332] Sequential element (nolabel_line29/Mouse/y_max_reg[2]) i
 WARNING: [Synth 8-3332] Sequential element (nolabel_line29/Mouse/y_max_reg[1]) is unused and will be removed from module Top_Student.
 WARNING: [Synth 8-3332] Sequential element (nolabel_line29/Mouse/y_max_reg[0]) is unused and will be removed from module Top_Student.
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:19 ; elapsed = 00:00:27 . Memory (MB): peak = 1649.246 ; gain = 496.000 ; free physical = 1174 ; free virtual = 9157
+Finished Technology Mapping : Time (s): cpu = 00:00:18 ; elapsed = 00:00:25 . Memory (MB): peak = 1649.250 ; gain = 496.000 ; free physical = 6076 ; free virtual = 13201
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -818,7 +818,7 @@ INFO: [Synth 8-5365] Flop nolabel_line29/Mouse/Inst_Ps2Interface/ps2_data_h_reg 
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:20 ; elapsed = 00:00:27 . Memory (MB): peak = 1649.246 ; gain = 496.000 ; free physical = 1173 ; free virtual = 9158
+Finished IO Insertion : Time (s): cpu = 00:00:19 ; elapsed = 00:00:26 . Memory (MB): peak = 1649.250 ; gain = 496.000 ; free physical = 6076 ; free virtual = 13201
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -831,7 +831,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:20 ; elapsed = 00:00:27 . Memory (MB): peak = 1649.246 ; gain = 496.000 ; free physical = 1173 ; free virtual = 9158
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:19 ; elapsed = 00:00:26 . Memory (MB): peak = 1649.250 ; gain = 496.000 ; free physical = 6076 ; free virtual = 13201
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -843,25 +843,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:20 ; elapsed = 00:00:27 . Memory (MB): peak = 1649.246 ; gain = 496.000 ; free physical = 1172 ; free virtual = 9157
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:19 ; elapsed = 00:00:26 . Memory (MB): peak = 1649.250 ; gain = 496.000 ; free physical = 6076 ; free virtual = 13201
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:20 ; elapsed = 00:00:27 . Memory (MB): peak = 1649.246 ; gain = 496.000 ; free physical = 1172 ; free virtual = 9157
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:19 ; elapsed = 00:00:26 . Memory (MB): peak = 1649.250 ; gain = 496.000 ; free physical = 6076 ; free virtual = 13201
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:20 ; elapsed = 00:00:28 . Memory (MB): peak = 1649.246 ; gain = 496.000 ; free physical = 1172 ; free virtual = 9157
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:19 ; elapsed = 00:00:26 . Memory (MB): peak = 1649.250 ; gain = 496.000 ; free physical = 6076 ; free virtual = 13201
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:20 ; elapsed = 00:00:28 . Memory (MB): peak = 1649.246 ; gain = 496.000 ; free physical = 1172 ; free virtual = 9157
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:19 ; elapsed = 00:00:26 . Memory (MB): peak = 1649.250 ; gain = 496.000 ; free physical = 6076 ; free virtual = 13201
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -940,11 +940,11 @@ Report Instance Areas:
 |22    |    od0                 |Oled_Display     |   834|
 +------+------------------------+-----------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:20 ; elapsed = 00:00:28 . Memory (MB): peak = 1649.246 ; gain = 496.000 ; free physical = 1172 ; free virtual = 9157
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:19 ; elapsed = 00:00:26 . Memory (MB): peak = 1649.250 ; gain = 496.000 ; free physical = 6076 ; free virtual = 13201
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 43 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 1649.246 ; gain = 129.648 ; free physical = 1227 ; free virtual = 9211
-Synthesis Optimization Complete : Time (s): cpu = 00:00:20 ; elapsed = 00:00:28 . Memory (MB): peak = 1649.246 ; gain = 496.000 ; free physical = 1227 ; free virtual = 9211
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 1649.250 ; gain = 129.648 ; free physical = 6133 ; free virtual = 13258
+Synthesis Optimization Complete : Time (s): cpu = 00:00:19 ; elapsed = 00:00:26 . Memory (MB): peak = 1649.250 ; gain = 496.000 ; free physical = 6133 ; free virtual = 13258
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Netlist 29-17] Analyzing 313 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
@@ -960,9 +960,9 @@ INFO: [Project 1-111] Unisim Transformation Summary:
 INFO: [Common 17-83] Releasing license: Synthesis
 170 Infos, 96 Warnings, 4 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:21 ; elapsed = 00:00:28 . Memory (MB): peak = 1676.262 ; gain = 523.016 ; free physical = 1236 ; free virtual = 9222
+synth_design: Time (s): cpu = 00:00:20 ; elapsed = 00:00:27 . Memory (MB): peak = 1676.266 ; gain = 523.016 ; free physical = 6130 ; free virtual = 13253
 WARNING: [Constraints 18-5210] No constraint will be written out.
 INFO: [Common 17-1381] The checkpoint '/home/mattliu/Desktop/MAD-2026/MouseAudioDisplay.runs/synth_1/Top_Student.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file Top_Student_utilization_synth.rpt -pb Top_Student_utilization_synth.pb
-report_utilization: Time (s): cpu = 00:00:00.06 ; elapsed = 00:00:00.07 . Memory (MB): peak = 1700.273 ; gain = 0.000 ; free physical = 1243 ; free virtual = 9226
-INFO: [Common 17-206] Exiting Vivado at Sat Mar 25 11:38:50 2023...
+report_utilization: Time (s): cpu = 00:00:00.05 ; elapsed = 00:00:00.07 . Memory (MB): peak = 1700.277 ; gain = 0.000 ; free physical = 6125 ; free virtual = 13249
+INFO: [Common 17-206] Exiting Vivado at Wed Mar 29 14:29:03 2023...

@@ -21,7 +21,7 @@
 
 
 module VHpaint(
-    input CLOCK,
+    input clock,
     input [6:0] sw,
     inout PS2Clk,PS2Data, //Mouse
     output cs,sdin,sclk,d_cn,resn,vccen,pmoden
@@ -53,8 +53,8 @@ module VHpaint(
     wire [15:0] painting;
     wire [2:0] colour;
     //declare clocks
-    clocks clock(.CLOCK(CLOCK),.clk_625mhz(oledClk),.clk_1hz(clk_1hz));
-    ThousandHz debounce_clk(CLOCK, debounceClk);
+    clocks clock_mod(.CLOCK(clock),.clk_625mhz(oledClk),.clk_1hz(clk_1hz));
+    ThousandHz debounce_clk(clock, debounceClk);
     
     //Declare OLED
     Oled_Display od0 (oledClk, ,frame_begin, 
@@ -62,7 +62,7 @@ module VHpaint(
                 cs, sdin, sclk, d_cn, resn, vccen, pmoden);
     
     //Connect Mouse inputs
-    MouseCtl Mouse (CLOCK,,x_input,y_input,,click,,,,,,,,,PS2Clk, PS2Data);    
+    MouseCtl Mouse (clock,,x_input,y_input,,click,,,,,,,,,PS2Clk, PS2Data);    
     debouncer(click, debounceClk, full_click);
     convertXY xy_conv(pixel_index, x_val, y_val);
     
@@ -72,7 +72,7 @@ module VHpaint(
     //
     SelectColor(oledClk, x_val, y_val, conv_x, conv_y, full_click, colour, palette);
     Draw(oledClk, x_val, y_val, conv_x, conv_y, full_click, colour, painting);
-    altMouseDisplay(CLOCK, x_val, y_val, conv_x, conv_y, cursor);
+    altMouseDisplay(clock, x_val, y_val, conv_x, conv_y, cursor);
     /*
         input clock,
         input [6:0] x_val, y_val,
